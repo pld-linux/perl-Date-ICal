@@ -9,7 +9,7 @@ Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date::ICal
 Name:		perl-Date-ICal
 Version:	1.72
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	perl-Date-Leapyear >= 1.03
 BuildRequires:	perl-Storable
 BuildRequires:	perl-Test-Simple >= 0.19
 BuildRequires:	perl-Time-HiRes
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,7 +32,8 @@ Rozszerzenie perla do obiektów danych ICalendar.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -47,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_sitelib}/Date/ICal.pm
-%{perl_sitelib}/Date/ICal
+%{perl_vendorlib}/Date/ICal.pm
+%{perl_vendorlib}/Date/ICal
 %{_mandir}/man3/*
