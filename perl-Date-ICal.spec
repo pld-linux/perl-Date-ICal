@@ -2,7 +2,7 @@
 %define	pdir	Date
 %define	pnam	ICal
 Summary:	Perl extension for ICalendar date objects
-Summary(pl):	Modu³ perla Date-ICal
+Summary(pl):	Modu³ perla Date::ICal
 Name:		perl-Date-ICal
 Version:	1.67
 Release:	4
