@@ -1,10 +1,14 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Date
 %define	pnam	ICal
 Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date::ICal
 Name:		perl-Date-ICal
-Version:	1.69
+Version:	1.70
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
@@ -30,6 +34,7 @@ Rozszerzenie perla do obiektów danych ICalendar.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
