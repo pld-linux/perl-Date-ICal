@@ -3,7 +3,7 @@ Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date-ICal
 Name:		perl-Date-ICal
 Version:	1.67
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -16,6 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Perl extension for ICalendar date objects.
+
+%description -l pl
+Rozszerzenie perla do obiektów danych ICalendar.
 
 %prep
 %setup -q -n Date-ICal-%{version}
