@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Date
 %define	pnam	ICal
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date-ICal
 Name:		perl-Date-ICal
 Version:	1.67
-Release:	3
-
+Release:	4
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Perl extension for ICalendar date objects.
 Rozszerzenie perla do obiektów danych ICalendar.
 
 %prep
-%setup -q -n Date-ICal-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
