@@ -13,6 +13,7 @@ Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	69e10541f5da09fc0f53474073da6744
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Date-Leapyear >= 1.03
 BuildRequires:	perl-Storable
