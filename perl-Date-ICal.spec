@@ -4,8 +4,8 @@
 Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date::ICal
 Name:		perl-Date-ICal
-Version:	1.67
-Release:	4
+Version:	1.69
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
