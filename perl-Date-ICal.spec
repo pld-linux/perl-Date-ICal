@@ -9,7 +9,7 @@ Summary:	Date::ICal - Perl extension for ICalendar date objects
 Summary(pl):	Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
 Name:		perl-Date-ICal
 Version:	1.72
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -17,9 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	69e10541f5da09fc0f53474073da6744
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Date-Leapyear >= 1.03
-BuildRequires:	perl-Storable
 BuildRequires:	perl-Test-Simple >= 0.19
-BuildRequires:	perl-Time-HiRes
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
