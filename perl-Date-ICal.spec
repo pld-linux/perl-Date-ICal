@@ -1,9 +1,12 @@
+%define	pdir	Date
+%define	pnam	ICal
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension for ICalendar date objects
 Summary(pl):	Modu³ perla Date-ICal
 Name:		perl-Date-ICal
 Version:	1.67
-Release:	2
+Release:	3
+
 License:	?
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -14,7 +17,7 @@ Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Date/Date-ICal-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
 BuildArch:	noarch
