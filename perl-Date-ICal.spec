@@ -6,10 +6,14 @@ Summary(pl):	Modu³ perla Date::ICal
 Name:		perl-Date-ICal
 Version:	1.69
 Release:	1
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	perl-Date-Leapyear >= 1.03
+BuildRequires:	perl-Storable
+BuildRequires:	perl-Test-Simple >= 0.19
+BuildRequires:	perl-Time-HiRes
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
