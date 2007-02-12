@@ -6,7 +6,7 @@
 %define		pdir	Date
 %define		pnam	ICal
 Summary:	Date::ICal - Perl extension for ICalendar date objects
-Summary(pl):	Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
+Summary(pl.UTF-8):   Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
 Name:		perl-Date-ICal
 Version:	1.72
 Release:	4
@@ -27,10 +27,10 @@ Perl module Date::ICal talks the ICal date format, and is intended to
 be a base class for other date/calendar modules that know about ICal
 time format also.
 
-%description -l pl
-Modu³ Perla Date::ICal komunikuje sie za pomoc± formatu daty ICal.
-Jest on zaprojektowany jako klasa bazowa dla innych modu³ów
-daty/kalendarza, rozumiej±cych ICal jako jeden z formatów czasu.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Date::ICal komunikuje sie za pomocÄ… formatu daty ICal.
+Jest on zaprojektowany jako klasa bazowa dla innych moduÅ‚Ã³w
+daty/kalendarza, rozumiejÄ…cych ICal jako jeden z formatÃ³w czasu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
