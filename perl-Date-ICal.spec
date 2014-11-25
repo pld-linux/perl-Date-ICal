@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Date
 %define		pnam	ICal
+%include	/usr/lib/rpm/macros.perl
 Summary:	Date::ICal - Perl extension for ICalendar date objects
 Summary(pl.UTF-8):	Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
 Name:		perl-Date-ICal
@@ -15,9 +15,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	69e10541f5da09fc0f53474073da6744
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Date-ICal/
 BuildRequires:	perl-Date-Leapyear >= 1.03
 BuildRequires:	perl-Test-Simple >= 0.19
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
