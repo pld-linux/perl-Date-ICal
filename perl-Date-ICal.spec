@@ -4,7 +4,6 @@
 
 %define		pdir	Date
 %define		pnam	ICal
-%include	/usr/lib/rpm/macros.perl
 Summary:	Date::ICal - Perl extension for ICalendar date objects
 Summary(pl.UTF-8):	Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
 Name:		perl-Date-ICal
