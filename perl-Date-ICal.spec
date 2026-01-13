@@ -8,7 +8,7 @@ Summary:	Date::ICal - Perl extension for ICalendar date objects
 Summary(pl.UTF-8):	Date::ICal - rozszerzenie Perla o obiekty czasu ICalendar
 Name:		perl-Date-ICal
 Version:	1.72
-Release:	5
+Release:	6
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
